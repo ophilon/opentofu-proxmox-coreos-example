@@ -8,7 +8,7 @@ data "ct_config" "fc40_ignition" {
 }
 
 resource "proxmox_virtual_environment_vm" "fc40" {
-  node_name   = "pve"
+  node_name   = "deb11phi"
   name        = "fc40a"
   description = "Managed by OpenTofu"
 
