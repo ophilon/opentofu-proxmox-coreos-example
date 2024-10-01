@@ -28,7 +28,7 @@ resource "proxmox_virtual_environment_vm" "fc40" {
   # clone a new disk from it with the size we're defining.
   disk {
     interface    = "virtio0"
-    datastore_id = "ISOs"
+    datastore_id = "data"
     file_id      = proxmox_virtual_environment_file.coreos_qcow2.id
     size         = 16
   }

@@ -11,7 +11,7 @@ resource "null_resource" "coreos_qcow2" {
 }
 
 resource "proxmox_virtual_environment_file" "coreos_qcow2" {
-  content_type = "iso"
+  content_type = "qcow2"
   datastore_id = "data"
   node_name    = "deb11phi"
 
