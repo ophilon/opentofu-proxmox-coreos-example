@@ -1,6 +1,6 @@
 resource "null_resource" "coreos_qcow2" {
   provisioner "local-exec" {
-    command = "mv $(coreos-installer download -p qemu -f qcow2.xz -s stable -a x86_64 -d) fedora-coreos.qcow2.img"
+    command = "mv $(coreos-installer download -p qemu -f qcow2.xz -s stable -a $(uname -m) -d) fedora-coreos.qcow2.img"
   }
 
   provisioner "local-exec" {

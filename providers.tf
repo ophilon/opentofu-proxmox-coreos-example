@@ -20,7 +20,7 @@ terraform {
 }
 
 provider "proxmox" {
-  endpoint = "https://pve.mydomain.tld:8006"
+  endpoint = "https://deb11phi:8006"
   # If Proxmox uses a self-signed TLS certificate, ignore the unknown issuer
   insecure = true
 
