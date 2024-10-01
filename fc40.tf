@@ -30,7 +30,7 @@ resource "proxmox_virtual_environment_vm" "fc40" {
     interface    = "virtio0"
     datastore_id = "ISOs"
     file_id      = proxmox_virtual_environment_file.coreos_qcow2.id
-    size         = 32
+    size         = 16
   }
 
   # We need a network connection so that we can install the guest agent
