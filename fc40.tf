@@ -3,7 +3,7 @@ data "ct_config" "fc40_ignition" {
   content = templatefile("butane/fc40.yaml.tftpl", {
     ssh_admin_username   = "core"
     ssh_admin_public_key = "${file("~/.ssh/id_ed25519.pub")}"
-    hostname             = "fc40b"
+    hostname             = "fc40a"
   })
 }
 

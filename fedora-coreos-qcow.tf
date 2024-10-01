@@ -6,7 +6,7 @@ resource "null_resource" "coreos_qcow2" {
 
   provisioner "local-exec" {
     when    = destroy
-    command = "rm -f fedora-coreos.qcow2.img"
+    command = "echo do manually: rm -f fedora-coreos.qcow2.img"
   }
 }
 
